@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Add clothing if different from default
         if (clothing && !prompt.includes(clothing)) {
-            prompt = prompt.replace(/sexy lingerie|sheer lace lingerie/i, clothing);
+            prompt = prompt.replace(/sexy lingerie|sheer lace lingerie|revealing micro bikini/i, clothing);
         }
 
         // Add scene
@@ -218,7 +218,25 @@ document.addEventListener('DOMContentLoaded', function() {
             "with a heart-shaped face",
             "with an elegant neck",
             "with a delicate jawline",
-            "with a feminine chin"
+            "with a feminine chin",
+            "with minimal clothing",
+            "with strategically placed fabric",
+            "with revealing cutouts",
+            "with a plunging neckline",
+            "with a high-cut bottom",
+            "with side ties",
+            "with an open back",
+            "with a barely-there outfit",
+            "with sheer fabric",
+            "with see-through material",
+            "with a daring outfit",
+            "with a risqué ensemble",
+            "with a provocative look",
+            "with a skimpy outfit",
+            "with a scanty bikini",
+            "with a tiny swimsuit",
+            "with a revealing top",
+            "with a low-rise bottom"
         ];
         
         document.getElementById('additionalDetails').value = 

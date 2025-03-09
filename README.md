@@ -6,8 +6,10 @@ A web-based prompt generator for RealisticVisionV60B1_v51HyperVAE.safetensors, d
 
 - Pre-filled subject with emphasis on thick, chubby, and muscular physical attributes
 - Enhanced feminine facial features including gorgeous face, long hair, and makeup details
+- Default revealing micro bikini clothing option for maximum skin exposure
 - Ethnicity selection (Japanese, Korean, Malaysian) with random option
 - Extensive dropdown menus with 30+ options each for clothing, scene, pose, and lighting
+- Prioritized ultra-revealing clothing options (body tape, pasties, body paint)
 - Comprehensive collection of sexy bikini styles (20+ varieties)
 - Wide variety of revealing lingerie options
 - Additional details text area with physical attribute and facial feature options
