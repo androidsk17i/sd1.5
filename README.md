@@ -1,50 +1,75 @@
 # RealisticVision Prompt Generator
 
-A web-based prompt generator for RealisticVisionV60B1_v51HyperVAE.safetensors, designed to help users create customized prompts for generating realistic images.
+A modern, minimalist web interface for creating customized prompts for the RealisticVisionV60B1_v51HyperVAE.safetensors model, designed with clean aesthetics and intuitive UX.
+
+![RealisticVision Prompt Generator](preview.png)
 
 ## Features
 
-- Pre-filled subject with emphasis on thick, chubby, and muscular physical attributes
-- Enhanced feminine facial features including gorgeous face, long hair, and makeup details
-- Default revealing micro bikini clothing option for maximum skin exposure
-- Ethnicity selection (Japanese, Korean, Malaysian) with random option
-- Extensive dropdown menus with 30+ options each for clothing, scene, pose, and lighting
-- Prioritized ultra-revealing clothing options (body tape, pasties, body paint)
-- Comprehensive collection of sexy bikini styles (20+ varieties)
-- Wide variety of revealing lingerie options
-- Additional details text area with physical attribute and facial feature options
-- Quality enhancer checkboxes
-- Pre-configured negative prompt to fix common issues (fingers, hands, unrealistic elements)
-- One-click prompt generation
-- Random prompt generation with a single click
-- Automatic copy to clipboard when prompt is generated
-- Separate buttons for copying positive and negative prompts
-- Responsive design for desktop and mobile devices
+### Content
+- Pre-filled subject with comprehensive physical attributes (thick, plump, bbw, fat, obese, chubby, muscular)
+- Enhanced feminine facial features (gorgeous face, flowing hair, red lips, subtle makeup)
+- Ethnicity selection (Japanese, Korean, Malaysian)
+- 60+ clothing options with emphasis on revealing styles
+- 30+ scene environments from luxurious interiors to natural settings
+- 30+ pose variations for dynamic compositions
+- 30+ lighting options for professional-grade results
+- Additional details text area for custom attributes
+- Quality enhancement toggles (high quality, highly detailed, 8K, cinematic lighting)
+- Optimized negative prompt pre-configured for the model
 
-## Usage
+### User Experience
+- Modern, minimalist interface with clean typography
+- Real-time prompt updates as options change
+- Smooth animations and visual feedback
+- Responsive design for all devices (mobile, tablet, desktop)
+- Intuitive layout with logical grouping of options
+- One-click generation and randomization
+- Automatic clipboard copy with visible confirmation
+- Clear visual hierarchy and whitespace
+- Accessible controls with proper labeling
+
+## Getting Started
 
 1. Open `index.html` in your web browser
-2. Select your desired ethnicity or use the random option
-3. Select your desired options from the dropdown menus or click "Random Prompt" for random selections
-4. Add any additional details in the text area
-5. Click "Generate Prompt" to create your prompt (it will be automatically copied to clipboard)
-6. Use the "Copy Positive Prompt" and "Copy Negative Prompt" buttons as needed
-7. The prompts are ready to use with RealisticVisionV60B1_v51HyperVAE.safetensors
+2. Select your desired options from the dropdown menus
+3. Click "Generate Prompt" to create your prompt (automatically copied to clipboard)
+4. Click "Random Prompt" to generate a random combination of options
+5. Use the "Copy Positive" and "Copy Negative" buttons as needed
+6. Paste the prompts into your stable diffusion interface with RealisticVisionV60B1_v51HyperVAE.safetensors
 
-## Files
+## Technology
 
-- `index.html` - The main HTML structure
-- `styles.css` - CSS styling for the application
-- `script.js` - JavaScript functionality
+- **Frontend**: HTML5, CSS3, JavaScript (vanilla)
+- **Fonts**: Inter (Google Fonts)
+- **Design**: CSS custom properties for theming, flexbox and grid for layout
+- **Animations**: CSS transitions and JavaScript for smooth interactions
+- **Clipboard API**: Modern browser API with fallback for older browsers
 
 ## Customization
 
-You can easily customize the options by editing the HTML file:
+You can easily customize the prompt generator:
 
-- Add more clothing options by adding `<option>` elements to the clothing select
-- Add more scene options by adding `<option>` elements to the scene select
-- Add more pose options by adding `<option>` elements to the pose select
-- Add more lighting options by adding `<option>` elements to the lighting select
+- **Add new options**: Edit the HTML `<select>` elements to add new clothing, scene, pose, or lighting options
+- **Change color scheme**: Modify the CSS custom properties in the `:root` selector
+- **Adjust subject description**: Edit the `value` attribute of the subject input
+- **Modify negative prompt**: Edit the `value` attribute of the negative prompt textarea
+
+## Installation
+
+No installation required - this is a client-side application that runs in any modern web browser.
+
+1. Download or clone this repository
+2. Open `index.html` in your web browser
+3. Optionally, deploy to any web server or hosting platform
+
+## Browser Support
+
+The application is compatible with all modern browsers:
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Opera (latest)
 
 ## License
 

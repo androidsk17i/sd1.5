@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RealisticVision Prompt Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,233 +15,245 @@
         </header>
 
         <main>
-            <form id="promptForm">
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" value="cute 40-year-old thick chubby muscular Japanese female bodybuilder with voluptuous curves, gorgeous feminine face, long flowing hair, red champagne lips, subtle eyeshadow, wearing revealing micro bikini" readonly>
-                </div>
-
-                <div class="form-group">
-                    <label for="ethnicity">Ethnicity:</label>
-                    <select id="ethnicity" name="ethnicity">
-                        <option value="Japanese">Japanese</option>
-                        <option value="Korean">Korean</option>
-                        <option value="Malaysian">Malaysian</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="clothing">Clothing Options:</label>
-                    <select id="clothing" name="clothing">
-                        <option value="revealing micro bikini">Revealing micro bikini</option>
-                        <option value="barely-there bikini">Barely-there bikini</option>
-                        <option value="extreme micro bikini">Extreme micro bikini</option>
-                        <option value="transparent bikini">Transparent bikini</option>
-                        <option value="see-through bikini">See-through bikini</option>
-                        <option value="string bikini">String bikini</option>
-                        <option value="thong bikini">Thong bikini</option>
-                        <option value="micro thong bikini">Micro thong bikini</option>
-                        <option value="slingshot bikini">Slingshot bikini</option>
-                        <option value="g-string bikini">G-string bikini</option>
-                        <option value="transparent mesh bodysuit">Transparent mesh bodysuit</option>
-                        <option value="sheer lace lingerie">Sheer lace lingerie</option>
-                        <option value="cupless bra and thong">Cupless bra and thong</option>
-                        <option value="crotchless lingerie">Crotchless lingerie</option>
-                        <option value="strappy lingerie set">Strappy lingerie set</option>
-                        <option value="open cup corset">Open cup corset</option>
-                        <option value="fishnet bodysuit">Fishnet bodysuit</option>
-                        <option value="wet look lingerie">Wet look lingerie</option>
-                        <option value="leather harness lingerie">Leather harness lingerie</option>
-                        <option value="lace body harness">Lace body harness</option>
-                        <option value="pearl thong">Pearl thong</option>
-                        <option value="ribbon lingerie">Ribbon lingerie</option>
-                        <option value="shibari rope lingerie">Shibari rope lingerie</option>
-                        <option value="body tape only">Body tape only</option>
-                        <option value="pasties and g-string">Pasties and g-string</option>
-                        <option value="body paint only">Body paint only</option>
-                        <option value="strategically placed flowers">Strategically placed flowers</option>
-                        <option value="sheer babydoll with g-string">Sheer babydoll with g-string</option>
-                        <option value="latex bodysuit">Latex bodysuit</option>
-                        <option value="chain bikini">Chain bikini</option>
-                        <option value="cut-out bikini">Cut-out bikini</option>
-                        <option value="Brazilian bikini">Brazilian bikini</option>
-                        <option value="mesh bikini">Mesh bikini</option>
-                        <option value="strappy bikini">Strappy bikini</option>
-                        <option value="side-tie bikini">Side-tie bikini</option>
-                        <option value="triangle bikini">Triangle bikini</option>
-                        <option value="leather bikini">Leather bikini</option>
-                        <option value="vinyl bikini">Vinyl bikini</option>
-                        <option value="sequin bikini">Sequin bikini</option>
-                        <option value="metallic bikini">Metallic bikini</option>
-                        <option value="monokini">Monokini</option>
-                        <option value="crochet bikini">Crochet bikini</option>
-                        <option value="high-cut bikini">High-cut bikini</option>
-                        <option value="bandeau bikini">Bandeau bikini</option>
-                        <option value="silk robe">Silk robe</option>
-                        <option value="corset with stockings">Corset with stockings</option>
-                        <option value="satin negligee">Satin negligee</option>
-                        <option value="lace teddy">Lace teddy</option>
-                        <option value="silk chemise">Silk chemise</option>
-                        <option value="babydoll nightie">Babydoll nightie</option>
-                        <option value="bralette and panties">Bralette and panties</option>
-                        <option value="lace garter belt set">Lace garter belt set</option>
-                        <option value="satin camisole">Satin camisole</option>
-                        <option value="sheer kimono robe">Sheer kimono robe</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="scene">Scene Options:</label>
-                    <select id="scene" name="scene">
-                        <option value="luxurious bedroom">Luxurious bedroom</option>
-                        <option value="cozy living room">Cozy living room</option>
-                        <option value="tropical beach">Tropical beach</option>
-                        <option value="elegant hotel suite">Elegant hotel suite</option>
-                        <option value="private pool">Private pool</option>
-                        <option value="penthouse apartment">Penthouse apartment</option>
-                        <option value="garden terrace">Garden terrace</option>
-                        <option value="luxury yacht">Luxury yacht</option>
-                        <option value="hot spring">Hot spring</option>
-                        <option value="secluded waterfall">Secluded waterfall</option>
-                        <option value="high-end spa">High-end spa</option>
-                        <option value="private island">Private island</option>
-                        <option value="mountain cabin">Mountain cabin</option>
-                        <option value="rooftop jacuzzi">Rooftop jacuzzi</option>
-                        <option value="luxury train compartment">Luxury train compartment</option>
-                        <option value="private jet interior">Private jet interior</option>
-                        <option value="upscale cocktail lounge">Upscale cocktail lounge</option>
-                        <option value="art deco bathroom">Art deco bathroom</option>
-                        <option value="victorian boudoir">Victorian boudoir</option>
-                        <option value="japanese zen garden">Japanese zen garden</option>
-                        <option value="parisian apartment">Parisian apartment</option>
-                        <option value="moroccan riad">Moroccan riad</option>
-                        <option value="luxury safari tent">Luxury safari tent</option>
-                        <option value="venetian palazzo">Venetian palazzo</option>
-                        <option value="manhattan loft">Manhattan loft</option>
-                        <option value="sunset beach cabana">Sunset beach cabana</option>
-                        <option value="mediterranean villa">Mediterranean villa</option>
-                        <option value="luxury cruise ship">Luxury cruise ship</option>
-                        <option value="cherry blossom garden">Cherry blossom garden</option>
-                        <option value="lavender field">Lavender field</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="pose">Pose Options:</label>
-                    <select id="pose" name="pose">
-                        <option value="sitting on a bed">Sitting on a bed</option>
-                        <option value="standing by a window">Standing by a window</option>
-                        <option value="lying on a couch">Lying on a couch</option>
-                        <option value="leaning against a wall">Leaning against a wall</option>
-                        <option value="posing in front of a mirror">Posing in front of a mirror</option>
-                        <option value="relaxing in a chair">Relaxing in a chair</option>
-                        <option value="walking towards camera">Walking towards camera</option>
-                        <option value="looking over shoulder">Looking over shoulder</option>
-                        <option value="kneeling on the floor">Kneeling on the floor</option>
-                        <option value="stretching arms above head">Stretching arms above head</option>
-                        <option value="lying on side">Lying on side</option>
-                        <option value="sitting with legs crossed">Sitting with legs crossed</option>
-                        <option value="bending forward slightly">Bending forward slightly</option>
-                        <option value="hands on hips">Hands on hips</option>
-                        <option value="sitting on edge of bathtub">Sitting on edge of bathtub</option>
-                        <option value="leaning back on hands">Leaning back on hands</option>
-                        <option value="standing with back arched">Standing with back arched</option>
-                        <option value="sitting on chair backwards">Sitting on chair backwards</option>
-                        <option value="lying on stomach">Lying on stomach</option>
-                        <option value="standing on tiptoes">Standing on tiptoes</option>
-                        <option value="sitting with legs to side">Sitting with legs to side</option>
-                        <option value="reclining on chaise lounge">Reclining on chaise lounge</option>
-                        <option value="standing with one leg raised">Standing with one leg raised</option>
-                        <option value="sitting on windowsill">Sitting on windowsill</option>
-                        <option value="leaning on balcony railing">Leaning on balcony railing</option>
-                        <option value="sitting with knees up">Sitting with knees up</option>
-                        <option value="standing with hand in hair">Standing with hand in hair</option>
-                        <option value="sitting on floor with legs extended">Sitting on floor with legs extended</option>
-                        <option value="leaning forward on table">Leaning forward on table</option>
-                        <option value="standing with arms crossed">Standing with arms crossed</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="lighting">Lighting Options:</label>
-                    <select id="lighting" name="lighting">
-                        <option value="soft natural light">Soft natural light</option>
-                        <option value="golden hour glow">Golden hour glow</option>
-                        <option value="dramatic shadows">Dramatic shadows</option>
-                        <option value="candlelight">Candlelight</option>
-                        <option value="neon lights">Neon lights</option>
-                        <option value="studio lighting">Studio lighting</option>
-                        <option value="moonlight">Moonlight</option>
-                        <option value="sunset silhouette">Sunset silhouette</option>
-                        <option value="morning sunbeams">Morning sunbeams</option>
-                        <option value="backlit halo effect">Backlit halo effect</option>
-                        <option value="cinematic lighting">Cinematic lighting</option>
-                        <option value="soft window light">Soft window light</option>
-                        <option value="moody low key lighting">Moody low key lighting</option>
-                        <option value="bright high key lighting">Bright high key lighting</option>
-                        <option value="colored gel lighting">Colored gel lighting</option>
-                        <option value="split lighting">Split lighting</option>
-                        <option value="rim lighting">Rim lighting</option>
-                        <option value="butterfly lighting">Butterfly lighting</option>
-                        <option value="rembrandt lighting">Rembrandt lighting</option>
-                        <option value="loop lighting">Loop lighting</option>
-                        <option value="broad lighting">Broad lighting</option>
-                        <option value="short lighting">Short lighting</option>
-                        <option value="fireplace glow">Fireplace glow</option>
-                        <option value="fairy lights">Fairy lights</option>
-                        <option value="lantern light">Lantern light</option>
-                        <option value="underwater lighting">Underwater lighting</option>
-                        <option value="dappled light through leaves">Dappled light through leaves</option>
-                        <option value="city lights at night">City lights at night</option>
-                        <option value="foggy atmospheric lighting">Foggy atmospheric lighting</option>
-                        <option value="dramatic spotlight">Dramatic spotlight</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="additionalDetails">Additional Details:</label>
-                    <textarea id="additionalDetails" name="additionalDetails" placeholder="Add custom details (jewelry, makeup, hair, etc.)"></textarea>
-                </div>
-
-                <div class="form-group quality-options">
-                    <label>Quality Enhancers:</label>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="highQuality" name="highQuality" checked>
-                        <label for="highQuality">High quality</label>
+            <section class="form-section">
+                <form id="promptForm">
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" value="cute 40-year-old mature thick plump bbw fat obese chubby muscular Japanese female bodybuilder with voluptuous curves, gorgeous feminine face, long flowing hair, red champagne lips, subtle eyeshadow, wearing revealing micro bikini" readonly>
                     </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="highlyDetailed" name="highlyDetailed" checked>
-                        <label for="highlyDetailed">Highly detailed</label>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="8k" name="8k" checked>
-                        <label for="8k">8K resolution</label>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="cinematic" name="cinematic">
-                        <label for="cinematic">Cinematic lighting</label>
-                    </div>
-                </div>
 
-                <div class="form-group button-group">
-                    <button type="button" id="generateBtn">Generate Prompt</button>
-                    <button type="button" id="randomBtn">Random Prompt</button>
-                </div>
-            </form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ethnicity">Ethnicity</label>
+                            <select id="ethnicity" name="ethnicity">
+                                <option value="Japanese">Japanese</option>
+                                <option value="Korean">Korean</option>
+                                <option value="Malaysian">Malaysian</option>
+                            </select>
+                        </div>
 
-            <div class="result-container">
-                <h2>Generated Prompt</h2>
-                <textarea id="generatedPrompt" readonly></textarea>
-                
-                <h2>Negative Prompt</h2>
-                <textarea id="negativePrompt" readonly>deformed, bad anatomy, disfigured, poorly drawn face, mutation, mutated, extra limb, ugly, poorly drawn hands, missing limb, floating limbs, disconnected limbs, malformed hands, blurry, ((((mutated hands and fingers)))), watermark, watermarked, oversaturated, censored, distorted hands, amputation, missing hands, obese, doubled face, double hands, b&w, black and white, sepia, unreal, unnatural, unrealistic, artificial, fake</textarea>
-                
-                <div class="button-container">
-                    <button id="copyBtn">Copy Positive Prompt</button>
-                    <button id="copyNegativeBtn">Copy Negative Prompt</button>
-                    <span id="copyNotification">Auto-copied to clipboard!</span>
+                        <div class="form-group">
+                            <label for="clothing">Clothing</label>
+                            <select id="clothing" name="clothing">
+                                <option value="revealing micro bikini">Revealing micro bikini</option>
+                                <option value="barely-there bikini">Barely-there bikini</option>
+                                <option value="extreme micro bikini">Extreme micro bikini</option>
+                                <option value="transparent bikini">Transparent bikini</option>
+                                <option value="see-through bikini">See-through bikini</option>
+                                <option value="string bikini">String bikini</option>
+                                <option value="thong bikini">Thong bikini</option>
+                                <option value="micro thong bikini">Micro thong bikini</option>
+                                <option value="slingshot bikini">Slingshot bikini</option>
+                                <option value="g-string bikini">G-string bikini</option>
+                                <option value="transparent mesh bodysuit">Transparent mesh bodysuit</option>
+                                <option value="sheer lace lingerie">Sheer lace lingerie</option>
+                                <option value="cupless bra and thong">Cupless bra and thong</option>
+                                <option value="crotchless lingerie">Crotchless lingerie</option>
+                                <option value="strappy lingerie set">Strappy lingerie set</option>
+                                <option value="open cup corset">Open cup corset</option>
+                                <option value="fishnet bodysuit">Fishnet bodysuit</option>
+                                <option value="wet look lingerie">Wet look lingerie</option>
+                                <option value="leather harness lingerie">Leather harness lingerie</option>
+                                <option value="lace body harness">Lace body harness</option>
+                                <option value="pearl thong">Pearl thong</option>
+                                <option value="ribbon lingerie">Ribbon lingerie</option>
+                                <option value="shibari rope lingerie">Shibari rope lingerie</option>
+                                <option value="body tape only">Body tape only</option>
+                                <option value="pasties and g-string">Pasties and g-string</option>
+                                <option value="body paint only">Body paint only</option>
+                                <option value="strategically placed flowers">Strategically placed flowers</option>
+                                <option value="sheer babydoll with g-string">Sheer babydoll with g-string</option>
+                                <option value="latex bodysuit">Latex bodysuit</option>
+                                <option value="chain bikini">Chain bikini</option>
+                                <option value="cut-out bikini">Cut-out bikini</option>
+                                <option value="Brazilian bikini">Brazilian bikini</option>
+                                <option value="mesh bikini">Mesh bikini</option>
+                                <option value="strappy bikini">Strappy bikini</option>
+                                <option value="side-tie bikini">Side-tie bikini</option>
+                                <option value="triangle bikini">Triangle bikini</option>
+                                <option value="leather bikini">Leather bikini</option>
+                                <option value="vinyl bikini">Vinyl bikini</option>
+                                <option value="sequin bikini">Sequin bikini</option>
+                                <option value="metallic bikini">Metallic bikini</option>
+                                <option value="monokini">Monokini</option>
+                                <option value="crochet bikini">Crochet bikini</option>
+                                <option value="high-cut bikini">High-cut bikini</option>
+                                <option value="bandeau bikini">Bandeau bikini</option>
+                                <option value="silk robe">Silk robe</option>
+                                <option value="corset with stockings">Corset with stockings</option>
+                                <option value="satin negligee">Satin negligee</option>
+                                <option value="lace teddy">Lace teddy</option>
+                                <option value="silk chemise">Silk chemise</option>
+                                <option value="babydoll nightie">Babydoll nightie</option>
+                                <option value="bralette and panties">Bralette and panties</option>
+                                <option value="lace garter belt set">Lace garter belt set</option>
+                                <option value="satin camisole">Satin camisole</option>
+                                <option value="sheer kimono robe">Sheer kimono robe</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="scene">Scene</label>
+                            <select id="scene" name="scene">
+                                <option value="luxurious bedroom">Luxurious bedroom</option>
+                                <option value="cozy living room">Cozy living room</option>
+                                <option value="tropical beach">Tropical beach</option>
+                                <option value="elegant hotel suite">Elegant hotel suite</option>
+                                <option value="private pool">Private pool</option>
+                                <option value="penthouse apartment">Penthouse apartment</option>
+                                <option value="garden terrace">Garden terrace</option>
+                                <option value="luxury yacht">Luxury yacht</option>
+                                <option value="hot spring">Hot spring</option>
+                                <option value="secluded waterfall">Secluded waterfall</option>
+                                <option value="high-end spa">High-end spa</option>
+                                <option value="private island">Private island</option>
+                                <option value="mountain cabin">Mountain cabin</option>
+                                <option value="rooftop jacuzzi">Rooftop jacuzzi</option>
+                                <option value="luxury train compartment">Luxury train compartment</option>
+                                <option value="private jet interior">Private jet interior</option>
+                                <option value="upscale cocktail lounge">Upscale cocktail lounge</option>
+                                <option value="art deco bathroom">Art deco bathroom</option>
+                                <option value="victorian boudoir">Victorian boudoir</option>
+                                <option value="japanese zen garden">Japanese zen garden</option>
+                                <option value="parisian apartment">Parisian apartment</option>
+                                <option value="moroccan riad">Moroccan riad</option>
+                                <option value="luxury safari tent">Luxury safari tent</option>
+                                <option value="venetian palazzo">Venetian palazzo</option>
+                                <option value="manhattan loft">Manhattan loft</option>
+                                <option value="sunset beach cabana">Sunset beach cabana</option>
+                                <option value="mediterranean villa">Mediterranean villa</option>
+                                <option value="luxury cruise ship">Luxury cruise ship</option>
+                                <option value="cherry blossom garden">Cherry blossom garden</option>
+                                <option value="lavender field">Lavender field</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pose">Pose</label>
+                            <select id="pose" name="pose">
+                                <option value="sitting on a bed">Sitting on a bed</option>
+                                <option value="standing by a window">Standing by a window</option>
+                                <option value="lying on a couch">Lying on a couch</option>
+                                <option value="leaning against a wall">Leaning against a wall</option>
+                                <option value="posing in front of a mirror">Posing in front of a mirror</option>
+                                <option value="relaxing in a chair">Relaxing in a chair</option>
+                                <option value="walking towards camera">Walking towards camera</option>
+                                <option value="looking over shoulder">Looking over shoulder</option>
+                                <option value="kneeling on the floor">Kneeling on the floor</option>
+                                <option value="stretching arms above head">Stretching arms above head</option>
+                                <option value="lying on side">Lying on side</option>
+                                <option value="sitting with legs crossed">Sitting with legs crossed</option>
+                                <option value="bending forward slightly">Bending forward slightly</option>
+                                <option value="hands on hips">Hands on hips</option>
+                                <option value="sitting on edge of bathtub">Sitting on edge of bathtub</option>
+                                <option value="leaning back on hands">Leaning back on hands</option>
+                                <option value="standing with back arched">Standing with back arched</option>
+                                <option value="sitting on chair backwards">Sitting on chair backwards</option>
+                                <option value="lying on stomach">Lying on stomach</option>
+                                <option value="standing on tiptoes">Standing on tiptoes</option>
+                                <option value="sitting with legs to side">Sitting with legs to side</option>
+                                <option value="reclining on chaise lounge">Reclining on chaise lounge</option>
+                                <option value="standing with one leg raised">Standing with one leg raised</option>
+                                <option value="sitting on windowsill">Sitting on windowsill</option>
+                                <option value="leaning on balcony railing">Leaning on balcony railing</option>
+                                <option value="sitting with knees up">Sitting with knees up</option>
+                                <option value="standing with hand in hair">Standing with hand in hair</option>
+                                <option value="sitting on floor with legs extended">Sitting on floor with legs extended</option>
+                                <option value="leaning forward on table">Leaning forward on table</option>
+                                <option value="standing with arms crossed">Standing with arms crossed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lighting">Lighting</label>
+                            <select id="lighting" name="lighting">
+                                <option value="soft natural light">Soft natural light</option>
+                                <option value="golden hour glow">Golden hour glow</option>
+                                <option value="dramatic shadows">Dramatic shadows</option>
+                                <option value="candlelight">Candlelight</option>
+                                <option value="neon lights">Neon lights</option>
+                                <option value="studio lighting">Studio lighting</option>
+                                <option value="moonlight">Moonlight</option>
+                                <option value="sunset silhouette">Sunset silhouette</option>
+                                <option value="morning sunbeams">Morning sunbeams</option>
+                                <option value="backlit halo effect">Backlit halo effect</option>
+                                <option value="cinematic lighting">Cinematic lighting</option>
+                                <option value="soft window light">Soft window light</option>
+                                <option value="moody low key lighting">Moody low key lighting</option>
+                                <option value="bright high key lighting">Bright high key lighting</option>
+                                <option value="colored gel lighting">Colored gel lighting</option>
+                                <option value="split lighting">Split lighting</option>
+                                <option value="rim lighting">Rim lighting</option>
+                                <option value="butterfly lighting">Butterfly lighting</option>
+                                <option value="rembrandt lighting">Rembrandt lighting</option>
+                                <option value="loop lighting">Loop lighting</option>
+                                <option value="broad lighting">Broad lighting</option>
+                                <option value="short lighting">Short lighting</option>
+                                <option value="fireplace glow">Fireplace glow</option>
+                                <option value="fairy lights">Fairy lights</option>
+                                <option value="lantern light">Lantern light</option>
+                                <option value="underwater lighting">Underwater lighting</option>
+                                <option value="dappled light through leaves">Dappled light through leaves</option>
+                                <option value="city lights at night">City lights at night</option>
+                                <option value="foggy atmospheric lighting">Foggy atmospheric lighting</option>
+                                <option value="dramatic spotlight">Dramatic spotlight</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalDetails">Additional Details</label>
+                            <textarea id="additionalDetails" name="additionalDetails" placeholder="Add custom details (jewelry, makeup, hair, etc.)"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group quality-options">
+                        <label>Quality Enhancers</label>
+                        <div class="checkbox-container">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="highQuality" name="highQuality" checked>
+                                <label for="highQuality">High quality</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="highlyDetailed" name="highlyDetailed" checked>
+                                <label for="highlyDetailed">Highly detailed</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="8k" name="8k" checked>
+                                <label for="8k">8K resolution</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="cinematic" name="cinematic">
+                                <label for="cinematic">Cinematic lighting</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" id="generateBtn">Generate Prompt</button>
+                        <button type="button" id="randomBtn">Random Prompt</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="result-section">
+                <div class="result-container">
+                    <h2>Generated Prompt</h2>
+                    <textarea id="generatedPrompt" readonly></textarea>
+                    
+                    <h2>Negative Prompt</h2>
+                    <textarea id="negativePrompt" readonly>deformed, bad anatomy, disfigured, poorly drawn face, mutation, mutated, extra limb, ugly, poorly drawn hands, missing limb, floating limbs, disconnected limbs, malformed hands, blurry, ((((mutated hands and fingers)))), watermark, watermarked, oversaturated, censored, distorted hands, amputation, missing hands, obese, doubled face, double hands, b&w, black and white, sepia, unreal, unnatural, unrealistic, artificial, fake</textarea>
+                    
+                    <div class="button-container">
+                        <button id="copyBtn">Copy Positive</button>
+                        <button id="copyNegativeBtn">Copy Negative</button>
+                        <span id="copyNotification">Auto-copied to clipboard!</span>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer>

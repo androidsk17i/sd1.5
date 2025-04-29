@@ -1,3 +1,21 @@
+/* Modern minimalist design for RealisticVision Prompt Generator */
+:root {
+    --primary: #5C7AEA;
+    --primary-light: #8A9EFF;
+    --secondary: #F8F8F8;
+    --dark: #1E1E1E;
+    --light: #FFFFFF;
+    --gray-100: #F5F5F5;
+    --gray-200: #EAEAEA;
+    --gray-300: #DDDDDD;
+    --gray-400: #BBBBBB;
+    --gray-500: #888888;
+    --gray-600: #666666;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --radius: 8px;
+    --transition: all 0.3s ease;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -6,14 +24,17 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    color: var(--dark);
+    background-color: var(--secondary);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -21,19 +42,20 @@ body {
 /* Header styles */
 header {
     text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 2.5rem;
 }
 
 h1 {
-    color: #2c3e50;
+    font-weight: 700;
+    font-size: 2.25rem;
     margin-bottom: 0.5rem;
+    color: var(--dark);
+    letter-spacing: -0.03em;
 }
 
 .subtitle {
-    color: #7f8c8d;
-    font-size: 0.9rem;
+    color: var(--gray-500);
+    font-size: 0.95rem;
 }
 
 /* Main content styles */
@@ -43,13 +65,33 @@ main {
     gap: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 /* Form styles */
+.form-section {
+    background-color: var(--light);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -57,130 +99,158 @@ main {
 label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #2c3e50;
+    font-weight: 500;
+    color: var(--gray-600);
+    font-size: 0.95rem;
 }
 
 input[type="text"],
 select,
 textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    background-color: var(--light);
+    font-family: inherit;
 }
 
 input[type="text"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #3498db;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(92, 122, 234, 0.15);
     outline: none;
 }
 
 input[readonly] {
-    background-color: #f5f5f5;
+    background-color: var(--gray-100);
     cursor: not-allowed;
 }
 
 textarea {
-    min-height: 100px;
+    min-height: 120px;
     resize: vertical;
 }
 
 /* Checkbox group styles */
 .quality-options {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    border-radius: var(--radius);
+    background-color: var(--light);
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .checkbox-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .checkbox-group {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .checkbox-group input[type="checkbox"] {
     margin-right: 0.5rem;
+    accent-color: var(--primary);
+    width: 16px;
+    height: 16px;
 }
 
 .checkbox-group label {
     margin-bottom: 0;
-    font-weight: normal;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 /* Button styles */
 button {
     padding: 0.75rem 1.5rem;
-    background-color: #3498db;
-    color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: var(--transition);
+    background-color: var(--gray-200);
+    color: var(--dark);
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: var(--gray-300);
 }
 
 .button-group {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+    .button-group {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 #generateBtn {
-    flex: 1;
-    background-color: #2ecc71;
-    font-weight: 600;
-    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--light);
 }
 
 #generateBtn:hover {
-    background-color: #27ae60;
+    background-color: var(--primary-light);
 }
 
 #randomBtn {
-    flex: 1;
-    background-color: #9b59b6;
-    font-weight: 600;
-    padding: 1rem;
+    background-color: var(--gray-300);
 }
 
 #randomBtn:hover {
-    background-color: #8e44ad;
+    background-color: var(--gray-400);
 }
 
 .button-container {
     display: flex;
-    align-items: center;
-    margin-top: 1rem;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
 }
 
-#copyBtn, #copyNegativeBtn {
-    margin-right: 1rem;
+#copyBtn {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+#copyBtn:hover {
+    background-color: var(--primary-light);
 }
 
 #copyNegativeBtn {
-    background-color: #95a5a6;
+    background-color: var(--gray-300);
 }
 
 #copyNegativeBtn:hover {
-    background-color: #7f8c8d;
+    background-color: var(--gray-400);
 }
 
 #copyNotification {
-    color: #27ae60;
-    font-weight: 600;
+    color: var(--primary);
+    font-weight: 500;
     opacity: 0;
     transition: opacity 0.3s ease;
+    font-size: 0.9rem;
 }
 
 #copyNotification.show {
@@ -188,34 +258,40 @@ button:hover {
 }
 
 /* Result container styles */
+.result-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .result-container {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--light);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height: 100%;
 }
 
 .result-container h2 {
     margin-bottom: 1rem;
-    color: #2c3e50;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark);
 }
 
 #generatedPrompt, #negativePrompt {
     width: 100%;
     min-height: 150px;
     padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    font-family: monospace;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius);
+    background-color: var(--gray-100);
+    font-family: 'Inter', monospace;
     font-size: 0.9rem;
-    line-height: 1.4;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
 #negativePrompt {
-    background-color: #f5f5f5;
-    border-color: #e0e0e0;
-    color: #555;
     min-height: 100px;
 }
 
@@ -223,19 +299,41 @@ button:hover {
 footer {
     margin-top: 3rem;
     text-align: center;
-    color: #7f8c8d;
-    font-size: 0.8rem;
+    color: var(--gray-500);
+    font-size: 0.85rem;
     padding-top: 1rem;
-    border-top: 1px solid #e0e0e0;
 }
 
 /* Responsive adjustments */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .form-section, .result-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
     .container {
         padding: 1rem;
     }
     
-    .result-container {
-        margin-top: 2rem;
+    .form-section, .result-container {
+        padding: 1.25rem;
+    }
+    
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #copyBtn, #copyNegativeBtn {
+        width: 100%;
     }
 } 
